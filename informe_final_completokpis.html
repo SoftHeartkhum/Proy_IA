@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Informe Implantación - Rendimiento y KPIs</title>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 20px; background: #f0f2f5; }
+        .container { max-width: 1200px; margin: auto; background: white; padding: 25px; border-radius: 15px; }
+        h1 { color: #1a73e8; border-bottom: 3px solid #1a73e8; }
+        h2 { background: #f8f9fa; padding: 10px; border-left: 4px solid #1a73e8; }
+        table { border-collapse: collapse; width: 100%; margin: 15px 0; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background: #1a73e8; color: white; }
+        .footer { text-align: center; margin-top: 30px; color: #666; }
+        .badge { background: #28a745; color: white; padding: 5px 15px; border-radius: 20px; display: inline-block; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 Informe de Implantación</h1>
+        <p><strong>Data Warehouse de Videojuegos</strong></p>
+        <p><strong>Fecha:</strong> 23/03/2026 12:38:19</p>
+        <p><strong>Responsable:</strong> Marco Adrian Cori Heredia</p>
+        <p><span class="badge">✅ IMPLANTACIÓN EXITOSA</span></p>
+        
+        <hr>
+        
+        <h2>⚡ 6.2 Pruebas de Rendimiento</h2>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>consulta</th>
+      <th>tiempo_1_seg</th>
+      <th>tiempo_2_seg</th>
+      <th>tiempo_3_seg</th>
+      <th>tiempo_promedio_seg</th>
+      <th>estado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1. Conteo simple</td>
+      <td>0.003</td>
+      <td>0.000</td>
+      <td>0.000</td>
+      <td>0.001</td>
+      <td>OK</td>
+    </tr>
+    <tr>
+      <td>2. Conteo con filtro</td>
+      <td>0.002</td>
+      <td>0.001</td>
+      <td>0.001</td>
+      <td>0.001</td>
+      <td>OK</td>
+    </tr>
+    <tr>
+      <td>4. Agregación con GROUP BY</td>
+      <td>0.004</td>
+      <td>0.004</td>
+      <td>0.003</td>
+      <td>0.004</td>
+      <td>OK</td>
+    </tr>
+    <tr>
+      <td>5. Consulta compleja</td>
+      <td>0.004</td>
+      <td>0.004</td>
+      <td>0.005</td>
+      <td>0.005</td>
+      <td>OK</td>
+    </tr>
+    <tr>
+      <td>6. Ordenamiento por precio</td>
+      <td>0.002</td>
+      <td>0.002</td>
+      <td>0.002</td>
+      <td>0.002</td>
+      <td>OK</td>
+    </tr>
+  </tbody>
+</table>
+        
+        <h2>📊 6.3 KPIs Avanzados</h2>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>KPI</th>
+      <th>Valor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total juegos en catálogo</td>
+      <td>9,950</td>
+    </tr>
+    <tr>
+      <td>Juegos en Steam/PC</td>
+      <td>9,950</td>
+    </tr>
+    <tr>
+      <td>Juegos en Epic Games</td>
+      <td>280</td>
+    </tr>
+    <tr>
+      <td>Juegos en Xbox</td>
+      <td>361</td>
+    </tr>
+    <tr>
+      <td>Juegos en Nintendo</td>
+      <td>358</td>
+    </tr>
+    <tr>
+      <td>Juegos en PlayStation</td>
+      <td>358</td>
+    </tr>
+    <tr>
+      <td>Top 1 precio</td>
+      <td>VEGAS Pro 18 Edit Steam Edition</td>
+    </tr>
+    <tr>
+      <td>Top 2 precio</td>
+      <td>Ohmicide</td>
+    </tr>
+    <tr>
+      <td>Top 3 precio</td>
+      <td>Clickteam Fusion 2.5</td>
+    </tr>
+    <tr>
+      <td>Top 4 precio</td>
+      <td>Pixel Game Maker MV</td>
+    </tr>
+    <tr>
+      <td>Top 5 precio</td>
+      <td>RPG Maker MV</td>
+    </tr>
+    <tr>
+      <td>Género #1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Género #2</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Género #3</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Género #4</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Género #5</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Precio promedio</td>
+      <td>$12.78</td>
+    </tr>
+    <tr>
+      <td>Top 1 desarrollador</td>
+      <td>Square Enix</td>
+    </tr>
+    <tr>
+      <td>Top 2 desarrollador</td>
+      <td>KOEI TECMO GAMES CO., LTD.</td>
+    </tr>
+    <tr>
+      <td>Top 3 desarrollador</td>
+      <td>CAPCOM Co., Ltd.</td>
+    </tr>
+    <tr>
+      <td>Top 4 desarrollador</td>
+      <td>Valve</td>
+    </tr>
+    <tr>
+      <td>Top 5 desarrollador</td>
+      <td>Ubisoft Montreal</td>
+    </tr>
+    <tr>
+      <td>Rango de precios</td>
+      <td>$0.27 - $149.99</td>
+    </tr>
+  </tbody>
+</table>
+        
+        <h2>✅ 6.1 Validación de Datos</h2>
+        <h3>Conteos</h3>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>tabla</th>
+      <th>registros</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DIM_VIDEOJUEGO_EpicGamesStore</td>
+      <td>280</td>
+    </tr>
+    <tr>
+      <td>DIM_VIDEOJUEGO_XboxMarketplace</td>
+      <td>361</td>
+    </tr>
+    <tr>
+      <td>DIM_VIDEOJUEGO_NintendoeShop</td>
+      <td>358</td>
+    </tr>
+    <tr>
+      <td>FACT_VENTAS_VIDEOJUEGOS_ACTUALIZADA</td>
+      <td>100000</td>
+    </tr>
+    <tr>
+      <td>DIM_VIDEOJUEGO_PlayStation</td>
+      <td>358</td>
+    </tr>
+    <tr>
+      <td>DIM_VIDEOJUEGO_actualizado</td>
+      <td>9950</td>
+    </tr>
+  </tbody>
+</table>
+        
+        <h3>Nulos</h3>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>tabla</th>
+      <th>campo</th>
+      <th>total</th>
+      <th>nulos</th>
+      <th>porcentaje_nulos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DIM_VIDEOJUEGO_actualizado</td>
+      <td>ID_Videojuego</td>
+      <td>9950</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>DIM_VIDEOJUEGO_actualizado</td>
+      <td>Nombre</td>
+      <td>9950</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>DIM_VIDEOJUEGO_actualizado</td>
+      <td>Desarrollador</td>
+      <td>9950</td>
+      <td>33</td>
+      <td>0.33</td>
+    </tr>
+    <tr>
+      <td>FACT_VENTAS_VIDEOJUEGOS_ACTUALIZADA</td>
+      <td>id_venta</td>
+      <td>100000</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>FACT_VENTAS_VIDEOJUEGOS_ACTUALIZADA</td>
+      <td>nombre_videojuego</td>
+      <td>100000</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>FACT_VENTAS_VIDEOJUEGOS_ACTUALIZADA</td>
+      <td>nombre_categoria</td>
+      <td>100000</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+  </tbody>
+</table>
+        
+        <div class="footer">
+            Informe generado automáticamente - Bloque 3: Implantación<br>
+            Marco Adrian Cori Heredia
+        </div>
+    </div>
+</body>
+</html>
+    
