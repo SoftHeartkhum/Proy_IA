@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Informe Implantación - Videojuegos</title>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 30px; background: #f0f2f5; }
+        .container { max-width: 1200px; margin: auto; background: white; padding: 30px; border-radius: 15px; }
+        h1 { color: #1a73e8; border-bottom: 3px solid #1a73e8; padding-bottom: 10px; }
+        h2 { background: #f8f9fa; padding: 10px; border-left: 4px solid #1a73e8; margin-top: 30px; }
+        table { border-collapse: collapse; width: 100%; margin: 15px 0; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background: #1a73e8; color: white; }
+        .badge { display: inline-block; padding: 5px 12px; border-radius: 20px; background: #28a745; color: white; }
+        .footer { text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd; color: #666; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 Informe de Implantación</h1>
+        <p><strong>Data Warehouse de Videojuegos</strong></p>
+        <p><strong>Fecha:</strong> 23/03/2026 12:01:26</p>
+        <p><strong>Responsable:</strong> Marco Adrian Cori Heredia</p>
+        <p><span class="badge">✅ IMPLANTACIÓN EXITOSA</span></p>
+        
+        <hr>
+        
+        <h2>✅ 6.1 Validación de Datos</h2>
+        <h3>6.1.1 Conteos de registros</h3>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>tabla</th>
+      <th>registros</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DIM_VIDEOJUEGO_EpicGamesStore</td>
+      <td>280</td>
+    </tr>
+    <tr>
+      <td>DIM_VIDEOJUEGO_XboxMarketplace</td>
+      <td>361</td>
+    </tr>
+    <tr>
+      <td>DIM_VIDEOJUEGO_NintendoeShop</td>
+      <td>358</td>
+    </tr>
+    <tr>
+      <td>FACT_VENTAS_VIDEOJUEGOS_ACTUALIZADA</td>
+      <td>100000</td>
+    </tr>
+    <tr>
+      <td>DIM_VIDEOJUEGO_PlayStation</td>
+      <td>358</td>
+    </tr>
+    <tr>
+      <td>DIM_VIDEOJUEGO_actualizado</td>
+      <td>9950</td>
+    </tr>
+  </tbody>
+</table>
+        <h3>6.1.3 Validación de nulos</h3>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>tabla</th>
+      <th>campo</th>
+      <th>total</th>
+      <th>nulos</th>
+      <th>porcentaje</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DIM_VIDEOJUEGO_EpicGamesStore</td>
+      <td>ID_Videojuego</td>
+      <td>280</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>DIM_VIDEOJUEGO_EpicGamesStore</td>
+      <td>Nombre</td>
+      <td>280</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>DIM_VIDEOJUEGO_EpicGamesStore</td>
+      <td>Desarrollador</td>
+      <td>280</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>DIM_VIDEOJUEGO_XboxMarketplace</td>
+      <td>ID_Videojuego</td>
+      <td>361</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>DIM_VIDEOJUEGO_XboxMarketplace</td>
+      <td>Nombre</td>
+      <td>361</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>DIM_VIDEOJUEGO_XboxMarketplace</td>
+      <td>Desarrollador</td>
+      <td>361</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>DIM_VIDEOJUEGO_NintendoeShop</td>
+      <td>ID_Videojuego</td>
+      <td>358</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>DIM_VIDEOJUEGO_NintendoeShop</td>
+      <td>Nombre</td>
+      <td>358</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>DIM_VIDEOJUEGO_NintendoeShop</td>
+      <td>Desarrollador</td>
+      <td>358</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>FACT_VENTAS_VIDEOJUEGOS_ACTUALIZADA</td>
+      <td>id_venta</td>
+      <td>100000</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>FACT_VENTAS_VIDEOJUEGOS_ACTUALIZADA</td>
+      <td>nombre_videojuego</td>
+      <td>100000</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>FACT_VENTAS_VIDEOJUEGOS_ACTUALIZADA</td>
+      <td>nombre_categoria</td>
+      <td>100000</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>DIM_VIDEOJUEGO_PlayStation</td>
+      <td>ID_Videojuego</td>
+      <td>358</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>DIM_VIDEOJUEGO_PlayStation</td>
+      <td>Nombre</td>
+      <td>358</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>DIM_VIDEOJUEGO_PlayStation</td>
+      <td>Desarrollador</td>
+      <td>358</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>DIM_VIDEOJUEGO_actualizado</td>
+      <td>ID_Videojuego</td>
+      <td>9950</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>DIM_VIDEOJUEGO_actualizado</td>
+      <td>Nombre</td>
+      <td>9950</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>DIM_VIDEOJUEGO_actualizado</td>
+      <td>Desarrollador</td>
+      <td>9950</td>
+      <td>33</td>
+      <td>0.33</td>
+    </tr>
+  </tbody>
+</table>
+        <h2>📊 6.3 Verificación de KPIs</h2>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Tabla</th>
+      <th>Registros</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DIM_VIDEOJUEGO_EpicGamesStore</td>
+      <td>280</td>
+    </tr>
+    <tr>
+      <td>DIM_VIDEOJUEGO_XboxMarketplace</td>
+      <td>361</td>
+    </tr>
+    <tr>
+      <td>DIM_VIDEOJUEGO_NintendoeShop</td>
+      <td>358</td>
+    </tr>
+    <tr>
+      <td>FACT_VENTAS_VIDEOJUEGOS_ACTUALIZADA</td>
+      <td>100,000</td>
+    </tr>
+    <tr>
+      <td>DIM_VIDEOJUEGO_PlayStation</td>
+      <td>358</td>
+    </tr>
+    <tr>
+      <td>DIM_VIDEOJUEGO_actualizado</td>
+      <td>9,950</td>
+    </tr>
+  </tbody>
+</table>
+        <h2>🚀 6.4 Implementación en Producción</h2>
+        <ul>
+            <li><strong>Data Warehouse:</strong> SQLite - archivo dw_videojuegos.db</li>
+            <li><strong>Fuentes de datos:</strong> CSVs de SteamSpy, Epic Games, Xbox, Nintendo, PlayStation</li>
+            <li><strong>Volumen de datos:</strong> Datos consolidados listos para análisis</li>
+            <li><strong>ETL:</strong> Proceso de carga automatizado</li>
+        </ul>
+        
+        <h2>📚 6.5 Documentación Técnica</h2>
+        <ul>
+            <li><strong>Modelo de datos:</strong> Estrella con tablas de dimensiones y hechos</li>
+            <li><strong>Herramientas:</strong> Python + Pandas + SQLite</li>
+            <li><strong>Validaciones:</strong> Conteos, nulos, duplicados, KPIs</li>
+        </ul>
+        
+        <div class="footer">
+            Informe generado automáticamente - Bloque 3: Implantación<br>
+            Marco Adrian Cori Heredia
+        </div>
+    </div>
+</body>
+</html>
+    
